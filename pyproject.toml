@@ -12,6 +12,7 @@ authors = [{ name = "yuandi.fan" }]
 readme = "README.md"
 requires-python = ">=3.8"
 dependencies = [
+    "geelytest-canbus",
     "bitstruct",
     "textparser",
     "diskcache",
