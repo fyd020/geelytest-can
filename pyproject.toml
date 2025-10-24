@@ -1,0 +1,37 @@
+[build-system]
+requires = [
+    "setuptools>=64.0.0",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "geelytest-can"
+dynamic = ["version"]
+description = "GeelyTest CAN Tools for Python"
+authors = [{ name = "yuandi.fan" }]
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "bitstruct",
+    "textparser",
+    "diskcache",
+    "crccheck",
+]
+
+[project.urls]
+homepage = "https://github.com/fyd020/SmartVCI.git"
+repository = "https://github.com/fyd020/SmartVCI.git"
+# documentation = ""
+# changelog = ""
+
+[project.optional-dependencies]
+test = [
+  "pytest",
+  "allure-pytest"
+]
+doc = [
+  "sphinx",
+]
+
+[project.scripts]
+geelytest-can = "geelytest_can.script:main_parser"
